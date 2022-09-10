@@ -13,7 +13,6 @@ class Home extends React.Component {
         const f = this.props.todos.mytodo;
         console.log(this.props.todos);
         this.setState({data: f});
-        console.log(this.state.data);
     }
     render(){
 
