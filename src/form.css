@@ -1,0 +1,69 @@
+div.form {
+    margin-top: 10vh;
+    margin-left: 10%;
+    width: 80%;
+    background-color: rgba(200, 200, 200, 0.8);
+    border: 2px;
+    border-radius: 8px;
+    border-style: outset;
+    min-height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+div.form > * {
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 0.3vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 25vh;
+}
+
+input:hover {
+    border: 2px rgba(255,255,0,0.7) solid;
+}
+
+
+
+input {
+    width: 70%;
+    height: 4vh;
+    border-radius: 5px;
+}
+
+form > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+input[type='button'] {
+    background-color: rgba(0,255,0,0.7);
+}
+
+label {
+    font-size: 1.1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(0,200,200);
+}
+
+@media only screen and (max-width: 300px){
+    form > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    div > input[type='button'] {
+        width: 200px;
+    }
+}
