@@ -1,24 +1,29 @@
 div.form {
-    margin-top: 10vh;
+    margin-top: 8vh;
     margin-left: 10%;
     width: 80%;
     background-color: rgba(200, 200, 200, 0.8);
     border: 2px;
     border-radius: 8px;
     border-style: outset;
-    min-height: 55vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    box-shadow: 3px 3px;
 }
 div.form > * {
     width: 95%;
     margin-left: 2.5%;
 }
 
-h3 {
+h2 {
     text-align: center;
     margin-top: 0.3vh;
+    font-weight: 700;
+    font-size: 1.8em;
+    font-family: serif;
+    color: rgba(0, 60, 255, 0.712);
 }
 
 form {
@@ -51,7 +56,7 @@ input[type='button'] {
 }
 
 label {
-    font-size: 1.1rem;
+    font-size: 1.2em;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(0,200,200);
 }
@@ -65,5 +70,22 @@ label {
     
     div > input[type='button'] {
         width: 200px;
+    }
+}
+
+@media only screen and (max-height: 500px){
+    div.form {
+        height: 300px;
+        margin-top: 10px;
+    }
+    
+    div > input[type='button'] {
+        width: 200px;
+    }
+    input {
+        height: 20px;
+    }
+    form {
+        min-height: 50%;
     }
 }

@@ -3,11 +3,18 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 5vh;
-    font-size: 1.3rem;
+    height: 50px;
+    font-size: 1.8em;
     border-bottom: 0.5px rgb(200,200,200) outset;
 }
 
 a {
     text-decoration: none;
+}
+
+div.dbody {
+    height: calc(95vh - 53px);
+    min-height: calc(95vh - 53px);
+    width: 100%;
+    margin-top: 5vh;
 }

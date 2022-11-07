@@ -1,7 +1,37 @@
 html,body {
     min-height: 100vh;
+    font-family: monospace;
+    background-color: rgb(220,220,220);
 }
 
 div#root {
+    display: none;
     min-height: 100vh;
+  }
+  
+  div#preloader {
+    display: block;
+    width: 100%;
+    height: 100vh;
+  }
+  div#rotor {
+    width: 30px;
+    height: 30px;
+    border: 5px #162447 solid;
+    border-bottom-color: rgb(255,255,255);
+    border-radius: 50%;
+    position: fixed;
+    top: calc((100vh - 30px)/2);
+    left: calc((100% - 30px)/2);
+    animation: rotor 1s ease-in-out infinite;
+    transform: rotate(0deg);
+}
+
+@keyframes rotor{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+       transform: rotate(360deg); 
+    }
 }

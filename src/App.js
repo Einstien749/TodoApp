@@ -18,11 +18,13 @@ class App extends React.Component {
                     <Link to="form"> Form </Link>
                 </nav>
 
-                <Routes>
-                    <Route exact path="/" element={<Home />} />
+                <div className="dbody">
+                    <Routes>
+                        <Route exact path="/" element={<Home />} />
 
-                    <Route path="form" element={<TodoForm />} />
-                </Routes>
+                        <Route path="form" element={<TodoForm />} />
+                    </Routes>
+                </div>
             </Router>
         )
     }

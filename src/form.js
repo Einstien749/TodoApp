@@ -35,16 +35,16 @@ class TodoForm extends React.Component {
                 this.taskRef.current.value = "";
                 this.timeRef.current.value = "";
                 this.dateRef.current.value = "";
-            }, 2000);
+            }, 1000);
         }
     }
 
     render(){
         return (
             <div className="form">
-                <h3>
-                    TODO FORM
-                </h3>
+                <h2>
+                    ADD A TODO
+                </h2>
                 <div style={{display: this.state.show, color: 'rgb(200,0,0)', textAlign: 'center'}}>
                     {this.state.err}
                 </div>

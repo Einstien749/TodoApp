@@ -1,10 +1,57 @@
-div.item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 1.8vh;
+div.dat {
+    width: 100%;
+    height: 100%;
 }
 
-div.item > div{
-    width: 30%;
+div.dat > table {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(150,150,150);
+}
+
+div#contact {
+    width: 200px;
+    height: 60px;
+    position: fixed;
+    bottom: 10px;
+    right: calc((100vw - 200px)/2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 3em;
+    color: rgb(20,20,255);
+    background-color: rgba(150,150,150,0.3);
+    border: 2px rgba(150,150,150,0.7) outset;
+    border-radius: 60px;
+
+}
+
+div#contact > * {
+    margin-top: 10px;
+}
+
+@media only screen and (max-height: 400px) {
+    div#contact {
+        width: 150px;
+        height: 40px;
+        position: fixed;
+        bottom: 0px;
+        right: calc((100vw - 150px)/2);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 2em;
+        color: rgb(20,20,255);
+        background-color: rgba(150,150,150,0.3);
+        border: 2px rgba(150,150,150,0.7) outset;
+        border-radius: 40px;
+    
+    }
+    div#contact > * {
+        margin-top: 6px;
+    }    
 }
